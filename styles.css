@@ -1,0 +1,90 @@
+.container {
+    display: grid;
+    background-color: #f3f3f3;
+    grid-gap: 8px;
+    border: 4px solid #cccccc;
+    grid-template-areas: 
+        'head head head head head head head'
+        'aside title title title title title title'
+        'aside section1 section1 section1 section2 section2 section2'
+        'aside section1 section1 section1 section2 section2 section2'
+        'aside contenido contenido contenido contenido contenido contenido'
+        'aside contenido contenido contenido contenido contenido contenido'
+        'footer footer footer footer footer footer footer';
+}
+
+.head {
+    grid-area: head;
+    background-color: #ffe4b5;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.title {
+    grid-area: title;
+    background-color: #add8e6;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #fffb07;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: #ffa07a;
+    padding: 15px;
+    font-size: 1.2em;
+    height: 300px;
+    text-align: center;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: #8fbc8f;
+    padding: 15px;
+    font-size: 1.2em;
+    height: 300px;
+    text-align: center;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: #06cdff;
+    padding: 20px;
+}
+.contenido1 {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 15px;
+    background-color: #dcdcdc;
+    border: 2px dashed #000;
+    padding: 10px;
+}
+
+.contenido1 > div {
+    background-color: #03afff; 
+    padding: 15px;
+    text-align: center; 
+    font-size: 1em;
+}
+
+.largo {
+    width: 400px;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: #dda0dd;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
